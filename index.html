@@ -1,27 +1,249 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
-    <title>Detector IA app </title>
 
-    <link rel="manifest" href="manifest.json">
+<meta charset="UTF-8">
 
-    <meta name="theme-color" content="#111111">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Detector IA</title>
+
+<link rel="manifest" href="manifest.json">
+
+<meta name="theme-color" content="#050505">
+
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+    linear-gradient(
+        135deg,
+        #050505,
+        #111133,
+        #003355
+    );
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: white;
+
+}
+
+
+/* TARJETA PRINCIPAL */
+
+.card {
+
+    width: 90%;
+
+    max-width: 550px;
+
+    padding: 50px 35px;
+
+    text-align: center;
+
+    background:
+    rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(15px);
+
+    border-radius: 35px;
+
+    box-shadow:
+    0 0 50px rgba(0,170,255,0.5);
+
+}
+
+
+/* LOGO */
+
+img {
+
+    width: 230px;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    border-radius: 35px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* TITULO */
+
+h1 {
+
+    font-size: 45px;
+
+    margin: 10px 0;
+
+}
+
+
+/* TEXTO */
+
+p {
+
+    font-size: 18px;
+
+    color: #dddddd;
+
+    line-height: 1.5;
+
+}
+
+
+
+/* BOTON */
+
+button {
+
+    margin-top: 30px;
+
+    width: 90%;
+
+    padding: 18px;
+
+    border: none;
+
+    border-radius: 40px;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #00aaff,
+        #0066ff
+    );
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+button:hover {
+
+    transform:scale(1.05);
+
+}
+
+
+
+/* ENLACE */
+
+a {
+
+    text-decoration:none;
+
+}
+
+
+
+/* AJUSTE PARA CELULAR */
+
+@media(max-width:600px){
+
+
+    .card{
+
+        padding:35px 20px;
+
+    }
+
+
+    img{
+
+        width:170px;
+
+        height:170px;
+
+    }
+
+
+    h1{
+
+        font-size:35px;
+
+    }
+
+
+    p{
+
+        font-size:16px;
+
+    }
+
+
+}
+
+
+</style>
+
 
 </head>
 
+
 <body>
 
-    <h1>🤖 Detector IA</h1>
 
-    <img src="icono.png" width="150">
+<div class="card">
 
-    <br><br>
 
-    <a href="https://ia-detector-8dkakciyppw3m5p9eujnxn.streamlit.app/">
-        <button>
-            Abrir Detector IA
-        </button>
-    </a>
+<img src="icono.png">
+
+
+<h1>
+🤖 Detector IA
+</h1>
+
+
+<p>
+Analiza imágenes y descubre si parecen creadas o modificadas con inteligencia artificial.
+</p>
+
+
+<a href="https://ia-detector-8dkakciyppw3m5p9eujnxn.streamlit.app/">
+
+<button>
+Abrir Detector IA
+</button>
+
+</a>
+
+
+</div>
+
 
 </body>
+
+
 </html>
